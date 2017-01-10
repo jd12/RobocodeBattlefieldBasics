@@ -53,12 +53,12 @@ Which is a pretty common idiom. Note that because a bearing is a value from -180
 
 For this assignment, use the above information to make a robot called BearingBot that does the following.
 
-1. Scans for their enemy (just whip your radar around in the while (true) loop of your run() method)
-2. Turns toward them (right or left, depending; use the bearing reported by the ScannedRobotEvent object passed to the onScannedRobot() method)
+1. Scans for their enemy (just whip your radar around in the `while (true)` loop of your `run()` method)
+2. Turns toward them (right or left, depending; use the bearing reported by the ScannedRobotEvent object passed to the `onScannedRobot()` method)
 3. Fires at them
-4. Lastly, rams into them (Hint: use the getDistance() method of the onScannedRobot() object passed to the onScannedRobot() method. The sample robot "RamFire" further demonstrates the virtues of ramming.)
+4. Lastly, rams into them (Hint: use the `getDistance()` method of the `onScannedRobot()` object passed to the `onScannedRobot()` method. The sample robot "RamFire" further demonstrates the virtues of ramming.)
 
-Hint: The code for steps 2-4 will go in the onScannedRobot() method.
+Hint: The code for steps 2-4 will go in the `onScannedRobot()` method.
 
 Match up your BearingBot against a single other opponent (not more than one - you'll see). Start by matching your robot up against SittingDuck and Target to test, then try with Tracker, SpinBot and Crazy.
 
