@@ -48,3 +48,18 @@ turnRight(event.getBearing());
 ```
 
 Which is a pretty common idiom. Note that because a bearing is a value from -180 to 180, calling turnRight() will actually make you turn left if the bearing is negative -- this is by design and it is what you want to have happen.
+
+## Assignment: Make BearingBot Live
+
+For your Robcode lab today, use the above information to make a robot called BearingBot that does the following.
+
+1. Scans for their enemy (just whip your radar around in the while (true) loop of your run() method)
+2. Turns toward them (right or left, depending; use the bearing reported by the ScannedRobotEvent object passed to the onScannedRobot() method)
+3. Fires at them
+4. Lastly, rams into them (Hint: use the getDistance() method of the onScannedRobot() object passed to the onScannedRobot() method. The sample robot "RamFire" further demonstrates the virtues of ramming.)
+
+Hint: The code for steps 2-4 will go in the onScannedRobot() method.
+
+Match up your BearingBot against a single other opponent (not more than one - you'll see). Start by matching your robot up against SittingDuck and Target to test, then try with Tracker, SpinBot and Crazy.
+
+Note: Remove the onHitByBullet() method that is automatically generated for you. It's boilerplate code that's just going to get in your way right now.
