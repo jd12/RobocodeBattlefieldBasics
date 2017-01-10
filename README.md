@@ -51,7 +51,7 @@ Which is a pretty common idiom. Note that because a bearing is a value from -180
 
 ## Assignment: Make BearingBot Live
 
-For your Robcode lab today, use the above information to make a robot called BearingBot that does the following.
+For this assignment, use the above information to make a robot called BearingBot that does the following.
 
 1. Scans for their enemy (just whip your radar around in the while (true) loop of your run() method)
 2. Turns toward them (right or left, depending; use the bearing reported by the ScannedRobotEvent object passed to the onScannedRobot() method)
