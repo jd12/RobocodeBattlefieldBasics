@@ -25,3 +25,26 @@ The battlefield is laid out in a cartesian plane with the origin in the lower-le
 ![Image of Degree Scale]
 (http://mark.random-article.com/robocode/coordinate_system.gif)
 _Image taken from [Rock 'em, sock 'em Robocode: Round 2](http://www-106.ibm.com/developerworks/java/library/j-robocode2/?loc=j)_
+
+You will note that this is a little different from the Unit Circle you learned in Trigonometry. This model is more akin to the vector system used in airplanes, submarines and (dare I say) tanks.
+
+Sample robot: [WallBanger](http://mark.random-article.com/robocode/lessons/WallBanger.java) - demonstrates how you can move around the battlefield and hit the walls.
+
+Note that even though we called `ahead(10000)` the call returns as soon as the robot hits a wall. (See the [Robocode API](http://mark.random-article.com/robocode/javadoc/index.html).)
+
+The sample robot "Walls" will also show you how a robot can interact with the battlefield walls.
+
+## Bearings
+
+You can get your degree heading by calling `getHeading()`, but there are occasions where you get a Bearing, that is to say, a degree measurement from -180 to 180 that represents your offset from something (a wall, another robot, etc.)
+
+![Image of Bearings]
+(http://mark.random-article.com/robocode/bearings.jpg)
+
+By using the bearing, you can easily turn toward something else like so:
+
+```
+turnRight(event.getBearing());
+```
+
+Which is a pretty common idiom. Note that because a bearing is a value from -180 to 180, calling turnRight() will actually make you turn left if the bearing is negative -- this is by design and it is what you want to have happen.
