@@ -12,7 +12,7 @@ Your robot consists of three parts: the "tank" (body), the gun, and the radar.
 
 Each of these parts can be moved independently from each other.
 
-Sample robot: [AnatomyBot](http://mark.random-article.com/robocode/lessons/AnatomyBot.java) - shows each of the three parts turning independently. Incidentally, it also shows how you can print debug statements. (Click on the button with the robot's name on the right to see debug output.)
+Sample robot: [AnatomyBot](./sampleBots/AnatomyBot.java) - shows each of the three parts turning independently. Incidentally, it also shows how you can print debug statements. (Click on the button with the robot's name on the right to see debug output.)
 
 Notice that the tank moves pretty slow, the gun turret moves faster, and the radar moves faster still.
 
@@ -24,7 +24,7 @@ The battlefield is laid out in a cartesian plane with the origin in the lower-le
 
 You will note that this is a little different from the Unit Circle you learned in Trigonometry. This model is more akin to the vector system used in airplanes, submarines and (dare I say) tanks.
 
-Sample robot: [WallBanger](http://mark.random-article.com/robocode/lessons/WallBanger.java) - demonstrates how you can move around the battlefield and hit the walls.
+Sample robot: [WallBanger](./sampleBots/WallBanger.java) - demonstrates how you can move around the battlefield and hit the walls.
 
 Note that even though we called `ahead(10000)` the call returns as soon as the robot hits a wall. (See the [Robocode API](http://mark.random-article.com/robocode/javadoc/index.html).)
 
