@@ -8,8 +8,7 @@ If you're unfamiliar with Java's fundamental language constructs, you may wish t
 
 Your robot consists of three parts: the "tank" (body), the gun, and the radar.
 
-[Image of Robot]
-(images/robot_anatomy.gif)
+![Image of Robot](./images/robot_anatomy.gif)
 
 Each of these parts can be moved independently from each other.
 
