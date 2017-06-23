@@ -20,9 +20,7 @@ Notice that the tank moves pretty slow, the gun turret moves faster, and the rad
 
 The battlefield is laid out in a cartesian plane with the origin in the lower-left corner. Degree measurements are top-wise; 0/360 is at the top.
 
-![Image of Degree Scale]
-(http://mark.random-article.com/robocode/coordinate_system.gif)
-_Image taken from [Rock 'em, sock 'em Robocode: Round 2](http://www-106.ibm.com/developerworks/java/library/j-robocode2/?loc=j)_
+![Image of Degree Scale](./images/coordinate_system.gif)
 
 You will note that this is a little different from the Unit Circle you learned in Trigonometry. This model is more akin to the vector system used in airplanes, submarines and (dare I say) tanks.
 
@@ -36,8 +34,7 @@ The sample robot "Walls" will also show you how a robot can interact with the ba
 
 You can get your degree heading by calling `getHeading()`, but there are occasions where you get a Bearing, that is to say, a degree measurement from -180 to 180 that represents your offset from something (a wall, another robot, etc.)
 
-![Image of Bearings]
-(http://mark.random-article.com/robocode/bearings.jpg)
+![Image of Bearings](./images/bearings.jpg)
 
 By using the bearing, you can easily turn toward something else like so:
 
