@@ -1,4 +1,4 @@
-package lessons;
+package sampleBots;
 
 import robocode.*;
 import java.text.NumberFormat;
